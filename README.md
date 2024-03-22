@@ -38,7 +38,7 @@ Configurations for the model can be changes from config.py file
 > Command: ```python evaluation.py```
 
 
-As the limitation of LFS, the dataset can be downloaded from [google driver]([https://drive.google.com/drive/folders/1z0xh0KOFB8V-9LQmE0BTJyXkUU_t3kYD?usp=sharing]).
+As the limitation of LFS, the dataset can be downloaded from https://drive.google.com/drive/folders/1z0xh0KOFB8V-9LQmE0BTJyXkUU_t3kYD?usp=sharing.
 Unzip the downloaded .zip file, which contains four folders ('datawash' ,'scripts', 'texar_repos', 'venv, 'pretrained_model'), then move these four folders to the ByteCue root directory.
 
 |--scripts<br>
