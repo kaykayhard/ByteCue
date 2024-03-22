@@ -36,3 +36,18 @@ Configurations for the model can be changes from config.py file
 > + Then, evaluate the generated comments<br>
 > run the evaluation.py <br>
 > Command: ```python evaluation.py```
+
+As the limitation of LFS, the dataset can be downloaded from [google driver]([https://drive.google.com/file/d/1ShngJ-1adWUeekiAJqo735Ykmv5TiacU/view?usp=share_link](https://drive.google.com/drive/folders/1z0xh0KOFB8V-9LQmE0BTJyXkUU_t3kYD?usp=sharing)).
+Unzip the downloaded .zip file, which contains four folders ('datawash' ,'scripts', 'texar_repos', 'venv, 'pretrained_model'), then move these four folders to the ByteCue root directory.
+
+|--scripts<br>
+|&emsp;&emsp;|--build_data_with_cfg.py<br>
+|&emsp;&emsp;|--drawCFG.py<br>
+|&emsp;&emsp;|--prepare_train_data.py<br>
+|--texar_repo<br>
+|--Bytecue.py<br>
+|--config.py<br>
+|--evaluation.py<br>
+|--generateCOMMENT.py<br>
+|--main.py<br>
+|--preprocess.py<br>
