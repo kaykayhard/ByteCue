@@ -1,6 +1,6 @@
 # ByteCue: One Step Further Than Decompilation: Bytecode Comment Generation
 
-This is the source code and dataset for ByteCue. The dataset is saved in the ```datawash/data``` folder.
+This is the source code and dataset for ByteCue. 
 
 ## Quick start
 If you want to train your own dataset, start with the step1, otherwise skip the step1.
