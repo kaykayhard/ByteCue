@@ -1,54 +1,118 @@
-# ByteCue: One Step Further Than Decompilation: Bytecode Comment Generation
+当然可以！下面是加了适量 emoji 的优化版 Markdown 文档，既增强了可读性，也让整体更活泼适用于 GitHub README：
 
-This is the source code and dataset for ByteCue. 
+---
 
-## Quick start
-If you want to train your own dataset, start with the step1, otherwise skip the step1.
-### Step1: data preprocess
-> + please place the bytecode, cfg and comment files under data folder with the following names:<br>
->-train_story.txt <br>
->-train_summ.txt <br>
--train_cfg.txt <br>
--train_api_pair.txt <br>
--eval_story.txt <br>
--eval_summ.txt <br>
--eval_cfg.txt <br>
--eval_api_pair.txt <br>
--test_story.txt <br>
--test_summ.txt <br>
--test_cfg.txt <br>
--test_api_pair.txt <br>
-> each story and summary must be in a single line (see sample text given.)
->
-> + Run the preprocess.py <br>
-Command: ```python preprocess.py```<br>
-This will creates three tfrecord files under the datawash folder.
+# 🚀 ByteCue: One Step Further Than Decompilation – Bytecode Comment Generation
 
-### Step2: train the model
-> run the main.py <br>
-Command: ```python main.py``` <br>
-Configurations for the model can be changes from config.py file
+📘 This repository contains the **source code** and **dataset** for **ByteCue**, a tool for automatic bytecode comment generation.
 
-### Step3: generate comments and test your trained model
-> + Firstly, generate comments for the test set <br>
-> run the generateCOMMENT.py <br>
-> Command: ```python generateCOMMENT.py```
-> + Then, evaluate the generated comments<br>
-> run the evaluation.py <br>
-> Command: ```python evaluation.py```
+---
 
+## ⚡ Quick Start
 
-As the limitation of LFS, the dataset can be downloaded from https://drive.google.com/drive/folders/1z0xh0KOFB8V-9LQmE0BTJyXkUU_t3kYD?usp=sharing.
-Unzip the downloaded .zip file, which contains four folders ('datawash' ,'scripts', 'texar_repos', 'venv, 'pretrained_model'), then move these four folders to the ByteCue root directory.
+If you plan to train the model using your own dataset, begin with **Step 1**. Otherwise, you may skip it.
 
-|--scripts<br>
-|&emsp;&emsp;|--build_data_with_cfg.py<br>
-|&emsp;&emsp;|--drawCFG.py<br>
-|&emsp;&emsp;|--prepare_train_data.py<br>
-|--texar_repo<br>
-|--Bytecue.py<br>
-|--config.py<br>
-|--evaluation.py<br>
-|--generateCOMMENT.py<br>
-|--main.py<br>
-|--preprocess.py<br>
+---
+
+### 🛠️ Step 1: Data Preprocessing
+
+1. 📂 Place the following input files (`bytecode`, `CFG`, `comments`) under the `data/` folder:
+
+```
+- train_story.txt
+- train_summ.txt
+- train_cfg.txt
+- train_api_pair.txt
+- eval_story.txt
+- eval_summ.txt
+- eval_cfg.txt
+- eval_api_pair.txt
+- test_story.txt
+- test_summ.txt
+- test_cfg.txt
+- test_api_pair.txt
+```
+
+> 🔸 **Note:** Each line in the `*_story.txt` and `*_summ.txt` files should represent a single example (see provided samples).
+
+2. ▶️ Run the preprocessing script:
+
+```bash
+python preprocess.py
+```
+
+📁 This will generate `.tfrecord` files under the `datawash/` directory.
+
+---
+
+### 🧠 Step 2: Train the Model
+
+Train the model by running:
+
+```bash
+python main.py
+```
+
+⚙️ You can modify training configurations in the `config.py` file.
+
+---
+
+### 💬 Step 3: Generate Comments & Evaluate
+
+1. ✍️ Generate comments for the test set:
+
+```bash
+python generateCOMMENT.py
+```
+
+2. 📊 Evaluate the generated comments:
+
+```bash
+python evaluation.py
+```
+
+---
+
+## 📦 Dataset Download
+
+Due to LFS limitations, please download the dataset from:
+
+🔗 [Google Drive – ByteCue Dataset](https://drive.google.com/drive/folders/1z0xh0KOFB8V-9LQmE0BTJyXkUU_t3kYD?usp=sharing)
+
+📦 After extracting the `.zip` file, move the following folders to the **ByteCue root directory**:
+
+```
+- datawash/
+- scripts/
+- texar_repos/
+- venv/
+- pretrained_model/
+```
+
+---
+
+## 📁 Project Structure
+
+```
+ByteCue/
+│
+├── scripts/
+│   ├── build_data_with_cfg.py
+│   ├── drawCFG.py
+│   └── prepare_train_data.py
+│
+├── texar_repos/
+├── datawash/
+├── pretrained_model/
+├── venv/
+│
+├── Bytecue.py
+├── config.py
+├── evaluation.py
+├── generateCOMMENT.py
+├── main.py
+└── preprocess.py
+```
+
+---
+
