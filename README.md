@@ -1,4 +1,4 @@
-当然可以！下面是加了适量 emoji 的优化版 Markdown 文档，既增强了可读性，也让整体更活泼适用于 GitHub README：
+
 
 ---
 
