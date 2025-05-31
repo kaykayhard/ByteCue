@@ -1,6 +1,6 @@
 
 
-# 🚀 ByteCue: One Step Further Than Decompilation – Bytecode Comment Generation
+# 🚀 ByteCue: enhancing bytecode comment generation with API information
 
 📘 This repository contains the **source code** and **dataset** for **ByteCue**, a tool for automatic bytecode comment generation.
 
